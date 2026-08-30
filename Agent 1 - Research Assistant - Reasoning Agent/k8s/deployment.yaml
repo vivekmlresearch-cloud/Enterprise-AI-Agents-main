@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: research-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: research-agent
+  template:
+    metadata:
+      labels:
+        app: research-agent
+    spec:
+      containers:
+        - name: app
+          image: research-agent:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - secretRef:
+                name: research-agent-secrets
+            - configMapRef:
+                name: research-agent-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: research-agent
+spec:
+  selector:
+    app: research-agent
+  ports:
+    - port: 80
+      targetPort: 8000

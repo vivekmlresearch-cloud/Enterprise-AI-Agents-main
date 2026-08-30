@@ -1,0 +1,16 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+httpx==0.28.1
+pydantic==2.11.1
+pydantic-settings==2.8.1
+qdrant-client==1.13.3
+numpy==2.2.4
+pandas==2.2.3
+orjson==3.10.16
+tenacity==9.0.0
+python-dotenv==1.0.1
+ragas==0.3.2
+datasets==3.5.0
+mcp[cli]==1.26.0
+sse-starlette==2.2.1
+tiktoken

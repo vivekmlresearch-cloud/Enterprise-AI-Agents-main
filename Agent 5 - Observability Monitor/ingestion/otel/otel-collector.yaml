@@ -1,0 +1,32 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+processors:
+  batch:
+  resource:
+    attributes:
+      - key: deployment.environment
+        value: prod
+        action: upsert
+
+exporters:
+  debug:
+    verbosity: normal
+
+service:
+  pipelines:
+    logs:
+      receivers: [otlp]
+      processors: [resource, batch]
+      exporters: [debug]
+    metrics:
+      receivers: [otlp]
+      processors: [resource, batch]
+      exporters: [debug]
+    traces:
+      receivers: [otlp]
+      processors: [resource, batch]
+      exporters: [debug]

@@ -1,0 +1,134 @@
+[
+  {
+    "ticker": "RELIANCE.NS",
+    "technical_score": 20.0,
+    "macro_score": 50.0,
+    "final_score": 30.5,
+    "verdict": "AVOID",
+    "confidence": 0.7,
+    "reasons": [
+      "Deterministic scores dominated the decision."
+    ],
+    "risks": [
+      "Narrative quality limited in mock mode."
+    ],
+    "indicator_snapshot": {
+      "rsi": 45.30499699486725,
+      "macd": -20.884328068716513,
+      "macd_signal": -17.917597422898922,
+      "macd_histogram": -2.9667306458175915,
+      "adx": 28.132419704467367,
+      "plus_di": 19.113673939736405,
+      "minus_di": 30.526770577162875,
+      "bollinger_bandwidth": 10.262465007841849,
+      "atr": 34.297727548767156,
+      "obv": -75731299.0,
+      "vwap": 1439.9082526917484,
+      "stoch_k": 42.84694033585409,
+      "stoch_d": 37.485172004744975,
+      "ichimoku_bias": "bearish",
+      "supertrend": 1408.6098424078618
+    },
+    "macro_summary": "Fallback macro summary produced without a live LLM.",
+    "today_price_summary": "Close 1350.20; day change 1.52%; volume ratio 0.94; VWAP 1439.9082526917484; supertrend 1408.6098424078618."
+  },
+  {
+    "ticker": "TCS.NS",
+    "technical_score": 60.0,
+    "macro_score": 50.0,
+    "final_score": 56.5,
+    "verdict": "WATCH",
+    "confidence": 0.7,
+    "reasons": [
+      "Deterministic scores dominated the decision."
+    ],
+    "risks": [
+      "Narrative quality limited in mock mode."
+    ],
+    "indicator_snapshot": {
+      "rsi": 50.23585127015935,
+      "macd": -29.21249371903241,
+      "macd_signal": -66.19992737604782,
+      "macd_histogram": 36.987433657015416,
+      "adx": 30.093748109018044,
+      "plus_di": 23.774443441354578,
+      "minus_di": 23.643721121125573,
+      "bollinger_bandwidth": 11.154242146434026,
+      "atr": 68.03628931141532,
+      "obv": -53802674.0,
+      "vwap": 2892.74354513042,
+      "stoch_k": 68.81764453395847,
+      "stoch_d": 84.54066177471942,
+      "ichimoku_bias": "bearish",
+      "supertrend": 2369.421587355991
+    },
+    "macro_summary": "Fallback macro summary produced without a live LLM.",
+    "today_price_summary": "Close 2524.30; day change -2.50%; volume ratio 2.40; VWAP 2892.74354513042; supertrend 2369.421587355991."
+  },
+  {
+    "ticker": "INFY.NS",
+    "technical_score": 53.0,
+    "macro_score": 50.0,
+    "final_score": 51.95,
+    "verdict": "AVOID",
+    "confidence": 0.7,
+    "reasons": [
+      "Deterministic scores dominated the decision."
+    ],
+    "risks": [
+      "Narrative quality limited in mock mode."
+    ],
+    "indicator_snapshot": {
+      "rsi": 46.23392461725352,
+      "macd": -8.61126618389244,
+      "macd_signal": -22.497979655158108,
+      "macd_histogram": 13.886713471265669,
+      "adx": 21.10401716152604,
+      "plus_di": 25.943972346674336,
+      "minus_di": 24.93388064212399,
+      "bollinger_bandwidth": 10.614423494409701,
+      "atr": 39.71940799920808,
+      "obv": -70320298.0,
+      "vwap": 1452.3565475888738,
+      "stoch_k": 47.83683625230674,
+      "stoch_d": 66.95506838098197,
+      "ichimoku_bias": "bearish",
+      "supertrend": 1235.194870458757
+    },
+    "macro_summary": "Fallback macro summary produced without a live LLM.",
+    "today_price_summary": "Close 1292.50; day change -2.94%; volume ratio 1.50; VWAP 1452.3565475888738; supertrend 1235.194870458757."
+  },
+  {
+    "ticker": "HDFCBANK.NS",
+    "technical_score": 32.0,
+    "macro_score": 50.0,
+    "final_score": 38.3,
+    "verdict": "AVOID",
+    "confidence": 0.7,
+    "reasons": [
+      "Deterministic scores dominated the decision."
+    ],
+    "risks": [
+      "Narrative quality limited in mock mode."
+    ],
+    "indicator_snapshot": {
+      "rsi": 49.57638278321567,
+      "macd": -22.13060683183221,
+      "macd_signal": -31.0017196265809,
+      "macd_histogram": 8.87111279474869,
+      "adx": 38.880037010396336,
+      "plus_di": 23.867748960236547,
+      "minus_di": 30.90504315816806,
+      "bollinger_bandwidth": 18.706321213247783,
+      "atr": 25.16208216196079,
+      "obv": -654973152.0,
+      "vwap": 895.1863591098967,
+      "stoch_k": 90.57930210394551,
+      "stoch_d": 74.29447316409883,
+      "ichimoku_bias": "bearish",
+      "supertrend": 819.1016251025059
+    },
+    "macro_summary": "Fallback macro summary produced without a live LLM.",
+    "today_price_summary": "Close 810.30; day change 1.58%; volume ratio 0.61; VWAP 895.1863591098967; supertrend 819.1016251025059."
+  }
+]

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: finance-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: finance-agent
+  template:
+    metadata:
+      labels:
+        app: finance-agent
+    spec:
+      containers:
+        - name: app
+          image: finance-agent:latest
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: finance-agent-config
+            - secretRef:
+                name: finance-agent-secrets
+          command: ["python", "-m", "finance_multi_agent.main", "--stocks-file", "/data/stocks.txt"]
+          volumeMounts:
+            - name: input-data
+              mountPath: /data
+      volumes:
+        - name: input-data
+          configMap:
+            name: finance-agent-input

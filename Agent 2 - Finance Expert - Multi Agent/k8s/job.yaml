@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: finance-agent-daily
+spec:
+  schedule: "30 9 * * 1-5"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: runner
+              image: finance-agent:latest
+              envFrom:
+                - configMapRef:
+                    name: finance-agent-config
+                - secretRef:
+                    name: finance-agent-secrets
+              command: ["python", "-m", "finance_multi_agent.main", "--stocks-file", "/data/stocks.txt"]
+              volumeMounts:
+                - name: input-data
+                  mountPath: /data
+          volumes:
+            - name: input-data
+              configMap:
+                name: finance-agent-input
